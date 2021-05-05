@@ -14,7 +14,7 @@ body {
 }
 
 .bgfaq {
-	background-image: url("ice5.jpg");
+	background-image: url("/IMG/ice5.jpg");
 	
 }
 
@@ -835,18 +835,18 @@ h2 {
 
 @keyframes animate {
 	0%,100%{
-		background-image: url("bg6.jpg");
+		background-image: url("/IMG/bg6.jpg");
 	}
 	25%{
-		background-image: url("ice.jpg");
+		background-image: url("/IMG/ice.jpg");
 	}
 	
 	50%{
-		background-image: url("bg5.jpg");
+		background-image: url("/IMG/bg5.jpg");
 	}
 	
 	75%{
-		background-image: url("ice5.jpg");
+		background-image: url("/IMG/ice5.jpg");
 	}
 }
 

@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	height: 650px;
 	display: grid;
-	background: url("../bilder/ice.jpg");
+	background: url("../IMG/ice.jpg");
 	background-repeat: no-repeat;
 	grid-template-rows: 3;
 	grid-template-areas: 
@@ -43,7 +43,7 @@ body {
 
 .container2 {
 	height: 600px;
-	background: url("../bilder/unnamed.jpg");
+	background: url("../IMG/unnamed.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: grid;
