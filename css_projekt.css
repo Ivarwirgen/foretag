@@ -1,0 +1,277 @@
+/* CSS Document */
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0px;
+	height: 100%;
+	
+	
+}
+
+.container {
+	width: 100%;
+	height: 650px;
+	display: grid;
+	background: url("../bilder/ice.jpg");
+	background-repeat: no-repeat;
+	grid-template-rows: 3;
+	grid-template-areas: 
+		'aside nav nav nav nav aside'
+		'aside main main main main aside'
+		'footer footer footer footer footer footer';
+	
+	
+}
+
+#slide-bg {
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	animation: slideBg
+}
+
+
+
+
+#mob-nav {
+	display: none;
+	 
+}
+
+.container2 {
+	height: 600px;
+	background: url("../bilder/unnamed.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	grid-template-rows: 2;
+	grid-template-areas: 
+		'main main main'
+		'footer footer footer';
+	
+}
+
+.text-upp {
+	font-size: 30px;
+	padding: 30px;
+}
+
+.rea {
+	width: 150px;
+	position: absolute;
+}
+
+main {
+	height: 500px;
+	grid-area: main;
+	width: 500px;
+	background-color: black;
+	border: 1px white solid;
+	color: antiquewhite;
+	padding-top: 50px;
+	margin: -70px auto; 
+}
+
+footer {
+	font-size: 26px;
+	height: 200px;
+	grid-area: footer;
+	background-color: black;
+	width: 100%;
+	border: 1px white solid;
+	color: white;
+	border-left: black;
+	
+}
+
+nav {
+	margin: auto;
+	margin-top: 28px;
+	height: 50px;
+	width: 90%;
+	font-size: 28px;
+	padding-left: 50px;
+	background-color:black;
+	color:antiquewhite;
+}
+
+nav > a {
+	float: left;
+	display: block;
+	padding: 8px 50px 10px 50px;
+	text-decoration: none;
+	color: antiquewhite;
+}
+
+nav > a:hover {
+	background-color: dodgerblue;
+	color: black;
+	transition-duration: 0.5s;
+	
+}
+
+.current {
+	background-color: white;
+	color: black;
+	padding-top: 37px;
+	position: relative;
+	bottom: 29px;
+}
+
+.hoger {
+	float: right;
+}
+
+.startglass {
+	width: 300px;
+}
+
+
+.load {
+	animation: slide 2s;
+}
+
+.slider {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	animation: slide 40s infinite;
+}
+
+.content {
+	color: #fff;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prin{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	letter-spacing: 5px;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+
+@keyframes slide{ 
+	0%{
+		
+	}
+	
+	20%{
+		
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 850px) {
+	
+.container {
+	height: 650px;
+	background-color: white;
+	display: grid;
+	grid-template-rows: 3;
+	grid-template-areas: 
+		'nav2 nav2 nav2 nav2'
+		'main main main'
+		'footer footer footer';
+}
+
+#nav2 {
+	display: grid;
+	margin: auto;
+	margin-top: 28px;
+	height: 50px;
+	width: 849;
+	font-size: 28px;
+	padding-left: 50px;
+	background-color:black;
+	color:antiquewhite;
+		
+}	
+	
+	
+nav {
+	display: none;
+		
+}	
+
+nav > a {
+	display: none;
+}
+
+main {
+	display: none;
+}
+	
+#mob-nav {
+		display: block;
+		color: white;
+}
+	
+i {
+	display: inline;
+	padding: 9px;
+	float: left;
+		
+}
+
+i:hover {
+	color: black;
+	background-color: dodgerblue;
+		
+}
+
+	
+}
+	
+	
+
+
+@media screen and (max-width: 420px) {
+	
+.container {
+	height: 650px;
+	background-color: white;
+	display: grid;
+	grid-template-rows: 3;
+	grid-template-areas: 
+		'nav nav nav nav'
+		'main main main'
+		'footer footer footer';
+}
+	
+nav > a {
+	display: none;
+}
+
+main{
+	display: none;
+	}
+	
+i {
+	display: inline;
+	
+	}
+	
+}
+
+
+
+
+
+ 
+	
+	
+
+

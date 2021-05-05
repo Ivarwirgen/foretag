@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>About</title>
+<link href="css_testforetag.css" rel="stylesheet" type='text/css'>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+</head>
+
+<body>
+	
+	<!-- nav för mobil och vanlig skärm-->
+<div class="bgfaq">
+<nav>
+<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+	</div>
+	<ul class="nav-links">
+		<li>
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="testFAQ.html">About</a>
+		</li>
+		<li>
+			<a href="projektpro.html">Products</a>
+		</li>
+	</ul>
+	
+	<div class="icon">
+		<img src="icon3.png" alt="glasstrut">
+	</div>
+</nav>
+	
+	<!-- Om företaget -->
+	<div id="main">
+	<h3>About us</h3>
+		<br>
+		<h6>
+			Our company was founded in 2015 with one goal in mind:
+			To make the most pleasant tasting experience of ice cream. To accomplish that we have invested in advanced ice cream machines and a friendly work environment to maximise the efficiency of our crew here at Icespice.
+		</h6> 
+		<br><br><br>
+		
+		
+	<h3>Our FAQ</h3>
+	<br>
+	<ul>
+		<li>
+			How do we deliver our products?
+		</li><br>
+		</ul>
+		<!-- roterande knapper med gömd text --> 
+			<button class="svar" type="button">
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+			</button>
+		<br><br>	
+		
+	
+		<div class="q1">
+			We deliver our products via a special cargo truck with intense cooling technology to keep the ice cream frozen and perfect for you to eat directly from the box.
+		</div>
+		
+		<ul>
+			<li>
+				How long is the delivery time?
+			</li>
+		</ul>
+		<br>
+			<button class="svar2" type="button">
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+			</button>
+		<br><br>
+		
+		<div class="q2">
+			The delivery takes between 2-4 workdays.
+		</div>
+	<ul>
+		<li>
+			Is the shipment free?
+		</li>
+		</ul>
+		<br>
+			<button class="svar3" type="button">
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+				<i class="fa fa-caret-down" style="font-size:24px"></i>
+			</button>
+		<br><br>
+		
+		<div class="q3">
+		Yes! The chipment is totaly free if you shop over $10.
+	</div>		
+</div>
+</div>
+		
+
+<script src="app.js"> 
+	</script>
+	
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	
+	<script>
+		//jquery kod för svarknapparna//
+		
+		$('.q1').hide();
+		$('.svar').on('click', function () {
+        $('.q1').toggle("fade");
+		$(this).toggleClass("active");
+		
+ });
+		$('.q2').hide();
+		$('.svar2').on('click', function () {
+        $('.q2').toggle("fade");
+		$(this).toggleClass("active2");
+		
+ });
+		$('.q3').hide();
+		$('.svar3').on('click', function () {
+        $('.q3').toggle("fade");
+		$(this).toggleClass("active3");
+		
+ });
+	
+	
+		
+		
+</script> 
+	
+</body>
+</html>

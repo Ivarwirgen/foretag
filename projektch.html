@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<title>Checkout-icespice</title>
+<link href="css_testforetag.css" rel="stylesheet" type='text/css'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	
+	<div class="wrapper">
+  <div class="payment">
+    
+    <h2>Checkout</h2>
+	 <h3>Cards supported: <br>
+		<i class="fa fa-cc-mastercard" style="font-size:20px;color: dodgerblue"></i>
+		<i class="fa fa-cc-visa" style="font-size:20px;color:#D7B213"></i>
+		<i class="fa fa-cc-paypal" style="font-size:20px;color: dodgerblue"></i>
+	 </h3><br>
+	 
+	<!-- email och kortnumer-->
+    <div class="form">
+		 <form action="http://www.bestonline.se/formripper/rippform.php" method="post">
+      <div class="card space icon-relative">
+        <label class="label">Mail: 
+		  </label>
+        <input type="email" class="input" placeholder="Enter Mail" required>
+		</div>
+		
+      <div class="card space icon-relative">
+        <label class="label">Card number</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number" required>
+    
+      </div>
+		<!-- Utångsdatum och cvc ruta -->
+			 
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date</label>
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00"  requierd>
+        </div>
+		  
+        <div class="card-item icon-relative">
+          <label class="label">CVC</label>
+          <input type="text" class="input" data-mask="000" placeholder="000" required>
+        </div>
+      </div>
+		  	<!-- Betalning med return och e-mail value -->
+
+	<button class="btn-pay" type="submit">Pay</button>
+		
+			<input type="hidden" name="s_email" value="ojespertn@varmdogymnasium.se">
+				<input type="hidden" name="s_retur" value="http://labb.vgy.se/~jespertn/projekt/foretag/thprojekt.html">
+				<label for="password">Password</label>
+				<input id="password" type="password" name="pw" size="10" value="" required>
+		</form>	
+   	</div>
+  </div>
+</div>
+
+  
+
+	
+</body>
+</html>
+	
+
