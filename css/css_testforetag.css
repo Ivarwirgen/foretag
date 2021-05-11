@@ -19,6 +19,11 @@ body {
 	background-size: 100% 100%;
 }
 
+.bgfaq1 {
+	background-image: url("/IMG/ice5.jpg");
+	
+}
+
 .bg-slide {
 	position: absolute;
 	left: 0;
@@ -144,10 +149,8 @@ footer {
 }
 
 .svar {
-	letter-spacing: 2px;
+	background-color: transparent;
 	border-radius: 7px;
-	background-color: black;
-	color: white;
 	border: black;
 	transform: rotate(0deg);
 	transition-duration: 1s;
@@ -156,7 +159,7 @@ footer {
 }
 
 .svar:hover {
-	background-color: white;
+	background-color: transparent;
 	color: dodgerblue;
 	transition: 0.3s;
 	cursor: pointer;
@@ -176,12 +179,13 @@ footer {
 	display: block;
 	justify-content: center;
 	border: 1px thick dodgerblue;
-	background-color: white;
+	background-color: rgb(165, 155, 155);
 	color: black;
+	background-color: wheat;
+	font-size: 1rem;
 }
 
 .svar2 {
-	letter-spacing: 2px;
 	border-radius: 7px;
 	background-color: black;
 	color: white;
@@ -199,12 +203,12 @@ footer {
 	display: block;
 	justify-content: center;
 	border: 1px thick dodgerblue;
-	background-color: white;
+	background-color: wheat;
 	color: black;
+	font-size: 1rem;
 }
 
 .svar2:hover {
-	background-color: white;
 	color: dodgerblue;
 	transition: 0.3s;
 	cursor: pointer;
@@ -216,7 +220,6 @@ footer {
 }
 
 .svar3 {
-	letter-spacing: 2px;
 	border-radius: 7px;
 	background-color: black;
 	color: white;
@@ -234,12 +237,13 @@ footer {
 	display: block;
 	justify-content: center;
 	border: 1px thick dodgerblue;
-	background-color: white;
+	background-color: wheat;
 	color: black;
+	font-size: 1rem;
 }
 
 .svar3:hover {
-	background-color: white;
+	background-color: transparent;
 	color: dodgerblue;
 	transition: 0.3s;
 	cursor: pointer;
@@ -823,7 +827,7 @@ h2 {
 		left: -20px;
 		font-size: 8px;
 	}
-	
+
 	#main {
 		width: 100%;
 	}
@@ -851,4 +855,28 @@ h2 {
 	}
 }
 
+.button {
+	width: 5rem;
+	height: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 200;
+	cursor: pointer;
+	display: inline-block;
+  }
+  
+  .button-1 {
+	background-color: transparent;
+	border: 3px solid #00d7c3;
+	border-radius: 50px;
+	-webkit-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+	color: #00d7c3;
+  }
+  .button-1:hover {
+	box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+	border: 3px solid #00d7c3;
+  }
 	
